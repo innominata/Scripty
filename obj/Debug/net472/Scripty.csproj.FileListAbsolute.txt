@@ -1,0 +1,13 @@
+d:\code\scripty\Scripty\obj\Debug\net472\Scripty.csprojAssemblyReference.cache
+d:\code\scripty\Scripty\obj\Debug\net472\PluginInfo.cs
+d:\code\scripty\Scripty\obj\Debug\net472\Scripty.AssemblyInfoInputs.cache
+d:\code\scripty\Scripty\obj\Debug\net472\Scripty.AssemblyInfo.cs
+d:\code\scripty\Scripty\obj\Debug\net472\Scripty.csproj.CoreCompileInputs.cache
+C:\Users\Tony\AppData\Roaming\r2modmanPlus-local\DysonSphereProgram\profiles\Default\BepInEx\scripts\Scripty.dll
+C:\Users\Tony\AppData\Roaming\r2modmanPlus-local\DysonSphereProgram\profiles\Default\BepInEx\scripts\Scripty.pdb
+d:\code\scripty\Scripty\obj\Debug\net472\Scripty.dll
+d:\code\scripty\Scripty\obj\Debug\net472\Scripty.pdb
+d:\code\scripty\Scripty\bin\Debug\Scripty.dll
+d:\code\scripty\Scripty\bin\Debug\Scripty.pdb
+d:\code\scripty\Scripty\bin\Debug\GalacticScale.dll
+d:\code\scripty\Scripty\bin\Debug\GalacticScale.pdb

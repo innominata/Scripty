@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<DevEnvLoc>$(MSBuildThisFileDirectory)DevEnv.targets</DevEnvLoc>
+		<TargetFramework>net472</TargetFramework>
+		<RootNamespace>GalacticScale</RootNamespace>
+	</PropertyGroup>
+	<Import Project="$(DevEnvLoc)" Condition="Exists('$(DevEnvLoc)')" />
+	<ItemDefinitionGroup>
+		<PackageReference>
+			<PrivateAssets>all</PrivateAssets>
+		</PackageReference>
+		<ProjectReference>
+			<PrivateAssets>all</PrivateAssets>
+		</ProjectReference>
+	</ItemDefinitionGroup>
+	<PropertyGroup>
+		<AssemblyName>Scripty</AssemblyName>
+		<Description>Hackpad for GalacticScale</Description>
+		<Version>1</Version>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<LangVersion>9.0</LangVersion>
+		<OutDir>bin/$(Configuration)</OutDir>
+		<OutDir Condition="Exists($(PluginDir))">$(PluginDir)\</OutDir>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all" />
+		<PackageReference Include="BepInEx.Core" Version="5.*" />
+		<PackageReference Include="BepInEx.PluginInfoProps" Version="1.*" />
+		<PackageReference Include="UnityEngine.Modules" Version="2018.4.12" IncludeAssets="compile" />
+		<PackageReference Include="DysonSphereProgram.GameLibs" Version="*-*" IncludeAssets="compile" />
+		<PackageReference Include="DysonSphereProgram.Modding.NebulaMultiplayerModApi" Version="*" IncludeAssets="compile" />
+	</ItemGroup>
+
+	<ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
+		<PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Reference Include="GalacticScale" PrivateAssets="all">
+	    <HintPath>C:\code\GS\obj\Debug\net472\GalacticScale.dll</HintPath>
+	    <Private>false</Private>
+	  </Reference>
+	</ItemGroup>
+
+</Project>
